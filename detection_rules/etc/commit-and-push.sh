@@ -16,12 +16,14 @@ git checkout ${TARGET_BRANCH}
 echo "apply new changes"
 git stash apply
 
-echo "force their changes"
-git checkout --theirs . --quiet
-
-echo "add"
+echo "commit available changes"
 git add --all
 
+echo "force changes if merge conflicts"
+git checkout --theirs . --quiet
+
+echo "add remaining changes"
+git add --all
 
 NEEDS_BACKPORT=$(git diff HEAD --quiet --exit-code && echo n || echo y)
 
