@@ -17,7 +17,7 @@ license = "Elastic License v2"
 name = "Exporting Exchange Mailbox via PowerShell"
 note = """## Triage and analysis
 
-### Investigating Exporting Exchange Mailbox via PowerShell
+### New Updates Testing updates Investigating Exporting Exchange Mailbox via PowerShell
 
 The `New-MailBoxExportRequest` cmdlet is used to begin the process of exporting contents of a primary mailbox or archive
 to a .pst file. Note that this is done on a per-mailbox basis and this cmdlet is available only in on-premises Exchange.
@@ -65,7 +65,7 @@ persistence mechanisms, and malware components.
 - Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the
 mean time to respond (MTTR).
 
-## Config
+## Setup
 
 If enabling an EQL rule on a non-elastic-agent index (such as beats) for versions <8.2, events will not define `event.ingested` and default fallback for EQL rules was not added until 8.2, so you will need to add a custom pipeline to populate `event.ingested` to @timestamp for this rule to work.
 """
