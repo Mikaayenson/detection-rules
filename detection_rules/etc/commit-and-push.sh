@@ -17,12 +17,10 @@ echo "apply new changes"
 git stash apply
 
 echo "force their changes"
-git checkout --theirs .
+git checkout --theirs . --quiet
 
 echo "add"
-git add -A
-git status
-
+git add --all
 
 
 NEEDS_BACKPORT=$(git diff HEAD --quiet --exit-code && echo n || echo y)
