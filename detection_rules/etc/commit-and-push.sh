@@ -16,9 +16,6 @@ git checkout ${TARGET_BRANCH}
 echo "apply new changes"
 git stash apply
 
-echo "commit available changes"
-git add --all
-
 echo "force changes if merge conflicts"
 git checkout --theirs . --quiet
 
