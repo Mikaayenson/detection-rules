@@ -17,11 +17,7 @@ license = "Elastic License v2"
 name = "Exporting Exchange Mailbox via PowerShell"
 note = """## Triage and analysis
 
-<<<<<<< Updated upstream
 ### Investigating Exporting Exchange Mailbox via PowerShell
-=======
-### Less Updates Testing updates Investigating Exporting Exchange Mailbox via PowerShell
->>>>>>> Stashed changes
 
 The `New-MailBoxExportRequest` cmdlet is used to begin the process of exporting contents of a primary mailbox or archive
 to a .pst file. Note that this is done on a per-mailbox basis and this cmdlet is available only in on-premises Exchange.
