@@ -20,7 +20,7 @@ echo "force their changes"
 git checkout --theirs .
 
 echo "add"
-git add .
+git add -A
 git status
 
 
